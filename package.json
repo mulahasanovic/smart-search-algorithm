@@ -1,0 +1,18 @@
+{
+  "name": "smart-search-algorithm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Sead Mulahasanović",
+  "license": "ISC",
+  "dependencies": {
+    "csv-parse": "^5.5.6",
+    "dotenv": "^16.4.5",
+    "knex": "^3.1.0",
+    "pg": "^8.11.5"
+  }
+}
