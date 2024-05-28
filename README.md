@@ -22,8 +22,7 @@ DB_NAME="foodstyles_fullstack_test",
 
 ## Usage
 
-You can use exported function in another code
-e.g
+Import `extractEntities`
 
 ```javascript
 extractEntities("McDonald's in London or Man");
