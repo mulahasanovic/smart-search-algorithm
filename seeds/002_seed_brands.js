@@ -7,6 +7,6 @@ const { parseCSV } = require("../lib/parse_csv");
 exports.seed = async function (knex) {
   await knex("brands").del();
 
-  const records = await parseCSV("brands");
+  const records = await parseCSV("./lib/csv/brands.csv");
   await knex("brands").insert(records);
 };

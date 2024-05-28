@@ -14,11 +14,12 @@ DB_HOST="127.0.0.1"
 DB_PORT="5432"
 DB_USER=???
 DB_PWD=???
-DB_NAME="foodstyles_fullstack_test",
+DB_NAME="foodstyles_fullstack_test"
 ```
 
-- Run `knex migrate:latest`
-- Run `knex seed:run`
+- Run `pnpm run init` -> Runs the following commands
+  - `knex migrate:latest`
+  - `knex seed:run`
 
 ## Usage
 
@@ -31,7 +32,11 @@ extractEntities("McDonald's in London or Man");
 or as CLI from project root
 
 ```bash
-node index.js "McDonald's"
-node index.js "McDonald's in London"
-node index.js "vegan sushi in London"
+pnpm run start "McDonald's"
+pnpm run start "McDonald's in London"
+pnpm run start "vegan sushi in London"
 ```
+
+## Tests
+
+`pnpm run test`
