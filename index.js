@@ -1,3 +1,4 @@
+const util = require("util");
 const extractEntities = require("./lib/extractEntities");
 
 const searchTerm = process.argv.slice(2);
@@ -9,7 +10,7 @@ try {
       );
 
       // Print combinations
-      result.forEach((combo) => console.log(combo));
+      console.log(util.inspect(result));
       process.exit(0);
     })();
   } else {
